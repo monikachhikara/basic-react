@@ -1,20 +1,12 @@
 import RestroCards from "./RestroCards";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import dataSet from "../utils/mockData";
+import { Link } from "react-router-dom";
 
 function Body(){
 const [data, setData]=useState(dataSet);
 const [searchValue, setSearchValue] = useState([]);
 
-useEffect(()=>{
-    fetchData();
-}, [])
-
-const fetchData =  async ()=>{
-    const dataApi = await fetch("https://www.olivegarden.com/web-api/menuitem/prod7840076?locale=en_US&menuItemId=prod7840076&restaurantId=700438");
-    const json = dataApi.json();
-    console.log(json);
-}
 
      return (
         <div className="body">
@@ -44,14 +36,15 @@ const fetchData =  async ()=>{
             <div className="cardsShow">
                 {data.map((restro)=>{
                     return (
+                    <Link key={restro.id} to={"/restaurants/700438"} >
                     <RestroCards 
-                    key={restro.id}
                     id={restro.id}
                     name={restro.name}
                     cuisine={restro.cuisine}
                     avgRating={restro.avgRating}
                     image={restro.image}
-                />
+                /> 
+                </Link>
                 )
                })}  
             </div>

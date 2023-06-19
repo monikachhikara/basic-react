@@ -6,6 +6,7 @@
     import ContactUs from "./ContactUs";
     import Error from "./Error";
     import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+    import RestaurantMenu from "./RestaurantMenu";
 
     function App(){
         return (
@@ -33,8 +34,11 @@
                     path:"/contactus",
                     element:<ContactUs />,
                 },
+                {
+                    path:"/restaurants/:resId",
+                    element:<RestaurantMenu />
+                }
             ],
-
             errorElement:<Error />
         },
     ]);

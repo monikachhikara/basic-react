@@ -1,0 +1,1 @@
+export const menuAPI = "https://www.olivegarden.com/web-api/menuitem/prod7840076?locale=en_US&menuItemId=prod7840076&restaurantId="
