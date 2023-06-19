@@ -28,8 +28,28 @@ let dataSet=[
         "cuisine": "Italian",
         "avgRating":"4.6",
         "image":"https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/fettuccine-alfredo-with-creme-fraiche.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Food & Fun",
+        "cuisine": "Italian",
+        "avgRating":"3.6",
+        "image":"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+      },
+       {
+        "id": 6,
+        "name": "Brunch Palace",
+        "cuisine": "Italian",
+        "avgRating":"4.4",
+        "image":"https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg"
+      },
+      {
+        "id": 7,
+        "name": "Let's Eat",
+        "cuisine": "Italian",
+        "avgRating":"3.9",
+        "image":"https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-egg-and-guacamole-sandwiches.jpg"
       }
- 
   
 ]
    

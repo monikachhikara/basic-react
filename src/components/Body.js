@@ -1,11 +1,20 @@
 import RestroCards from "./RestroCards";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import dataSet from "../utils/mockData";
 
 function Body(){
 const [data, setData]=useState(dataSet);
 const [searchValue, setSearchValue] = useState([]);
 
+useEffect(()=>{
+    fetchData();
+}, [])
+
+const fetchData =  async ()=>{
+    const dataApi = await fetch("https://www.olivegarden.com/web-api/menuitem/prod7840076?locale=en_US&menuItemId=prod7840076&restaurantId=700438");
+    const json = dataApi.json();
+    console.log(json);
+}
 
      return (
         <div className="body">
