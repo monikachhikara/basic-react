@@ -2,12 +2,18 @@ import RestroCards from "./RestroCards";
 import { useState } from "react";
 import dataSet from "../utils/mockData";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 function Body(){
 const [data, setData]=useState(dataSet);
 const [searchValue, setSearchValue] = useState([]);
 
-
+const onlineStatus = useOnlineStatus();
+if(onlineStatus === false)
+    return (
+        <h1>Looks like you'r offline!! Please check your connection</h1>
+    );
+    
      return (
         <div className="body">
             <div className="searchBar">

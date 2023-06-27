@@ -7,7 +7,7 @@
     import Error from "./Error";
     import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
     import RestaurantMenu from "./RestaurantMenu";
-
+    
     function App(){
         return (
             <div className="app">

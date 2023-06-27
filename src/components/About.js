@@ -1,6 +1,7 @@
 import UserClass from "./UserClass";
 
 function About(){
+
     return (
         <>
         <div className="about">

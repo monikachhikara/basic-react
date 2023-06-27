@@ -1,4 +1,6 @@
+
 function ContactUs(){
+
     return (
         <div className="contactUs">
             <h1>Thanks For recahing out to us!</h1>
